@@ -21,7 +21,7 @@ def crawl_link_article(url):
             try:
                 article = Article('http://' + url)
                 article.download()
-                time.sleep(2)
+                time.sleep(1)
                 article.parse()
                 flag = True
             except:
@@ -32,7 +32,7 @@ def crawl_link_article(url):
                 try:
                     article = Article('https://' + url)
                     article.download()
-                    time.sleep(2)
+                    time.sleep(1)
                     article.parse()
                     flag = True
                 except:
@@ -45,7 +45,7 @@ def crawl_link_article(url):
             try:
                 article = Article(url)
                 article.download()
-                time.sleep(2)
+                time.sleep(1)
                 article.parse()
             except:
                 logging.exception("Exception in getting data from url {}".format(url))

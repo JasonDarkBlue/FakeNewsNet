@@ -1,8 +1,8 @@
 {
-  "dump_location": "fakenewsnet_dataset",
+  "dump_location": "/data/reddit_Jason/fakenewsnet_dataset",
   "dataset_dir": "../dataset",
   "tweet_keys_file": "resources/tweet_keys_file.txt",
-  "num_process": 4,
+  "num_process": 10,
   "num_twitter_keys": 1,
   "data_collection_choice": [
     {
@@ -23,5 +23,5 @@
     }
   ],
 
-  "data_features_to_collect" : ["news_articles", "tweets", "retweets", "user_profile", "user_timeline_tweets", "user_followers", "user_following"]
+  "data_features_to_collect" : ["news_articles"]
 }
